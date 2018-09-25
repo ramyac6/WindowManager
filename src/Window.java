@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.util.Random;
 
+import static java.awt.font.TextAttribute.FONT;
+
 
 public class Window {
     public int x;
@@ -8,7 +10,7 @@ public class Window {
     public int w;
     public int h;
     public Color myColor;
-    public int zOrder;
+    public int zOrder = 1;
 
     public Window(){
         Random rand = new Random();
@@ -45,5 +47,8 @@ public class Window {
     public void drawWindow (Graphics g) {
         g.setColor(this.myColor);
         g.fillRect(this.x, this.y, this.h, this.w);
+        g.setColor(Color.white);
+        g.setFont(new Font("Arial", Font.BOLD, 20));
+        g.drawString(""+this.zOrder,this.x+10,this.y+30);
     }
 }

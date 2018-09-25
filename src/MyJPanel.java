@@ -13,11 +13,13 @@ public class MyJPanel extends JPanel {
             this.manager.addWindow(w);
         }
 
+        for(int i = 0; i<10; i++){
+            this.manager.getWindows().get(i).setZOrder(this.manager.getWindows().size()-i);
+        }
     }
 
     @Override
     public void paintComponent(Graphics g) {
-        //super.paintComponent(g);
         manager.drawWindows(g);
     }
 }
