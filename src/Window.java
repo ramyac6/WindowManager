@@ -5,12 +5,12 @@ import static java.awt.font.TextAttribute.FONT;
 
 
 public class Window {
-    public int x;
-    public int y;
-    public int w;
-    public int h;
-    public Color myColor;
-    public int zOrder = 1;
+    private int x;
+    private int y;
+    private int w;
+    private int h;
+    private Color myColor;
+    private int zOrder = 1;
 
     public Window(){
         Random rand = new Random();
@@ -40,6 +40,22 @@ public class Window {
 
     }
 
+    public int getX(){
+        return this.x;
+    }
+
+    public int getY(){
+        return this.y;
+    }
+
+    public int getW(){
+        return this.w;
+    }
+
+    public int getH(){
+        return this.h;
+    }
+
     public int getZOrder(){
         return this.zOrder;
     }
@@ -49,6 +65,6 @@ public class Window {
         g.fillRect(this.x, this.y, this.h, this.w);
         g.setColor(Color.white);
         g.setFont(new Font("Arial", Font.BOLD, 20));
-        g.drawString(""+this.zOrder,this.x+10,this.y+30);
+        //g.drawString(""+this.zOrder,this.x+10,this.y+30);
     }
 }
