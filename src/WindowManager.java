@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class WindowManager {
     private ArrayList<Window> windowList;
@@ -9,13 +8,12 @@ public class WindowManager {
         this.windowList = new ArrayList<Window>();
     }
 
-    public void addWindow() {
-        Window w = new Window();
+    public void addWindow(Window w) {
         this.windowList.add(w);
     }
 
     public void drawWindows(Graphics g){
-        for (Window w : windowList) {
+        for (Window w:windowList) {
             w.drawWindow(g);
         }
     }
@@ -28,7 +26,7 @@ public class WindowManager {
         return new Window();
     }
 
-    public List<Window> getWindows(){
+    public ArrayList<Window> getWindows(){
         return this.windowList;
     }
 

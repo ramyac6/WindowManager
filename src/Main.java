@@ -7,16 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.setSize(2000,1500);
+        frame.setSize(1500,1500);
         MyJPanel panel = new MyJPanel();
         frame.add(panel);
         frame.setVisible(true);
         frame.setTitle("Window Manager");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        Graphics g = panel.getGraphics();
-        panel.paintComponent(g);
-
-
-       // w.drawWindow();
     }
 }

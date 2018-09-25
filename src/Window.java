@@ -3,24 +3,21 @@ import java.util.Random;
 
 
 public class Window {
-    private static int x;
-    private static int y;
-    private static int w;
-    private static int h;
-    private Color myColor;
+    public int x;
+    public int y;
+    public int w;
+    public int h;
+    public Color myColor;
     public int zOrder;
-    public static int total = 0;
 
     public Window(){
         Random rand = new Random();
         this.x = rand.nextInt(801)+100;
         //801+100 is max, 100 is min
-        this.y = rand.nextInt(801)+100;
+        this.y = rand.nextInt(501)+100;
         this.w = 500;
         this.h = 500;
         this.myColor = new Color(rand.nextInt(255)+1, rand.nextInt(255)+1, rand.nextInt(255)+1); // Color white
-        this.zOrder = total;
-        total++;
     }
 
     public Window(int x, int y, int w,int h){
@@ -31,22 +28,17 @@ public class Window {
         this.w = w;
         this.h = h;
         this.myColor = new Color(rand.nextInt(255)+1, rand.nextInt(255)+1, rand.nextInt(255)+1); // Color white
-        this.zOrder = total;
-        total++;
     }
 
-    public int comparable(Window w){
-        if (this.zOrder > w.getzOrder()){
-            return 1;
-        } else if (this.zOrder < w.getzOrder()){
-            return -1;
-        } else {
-            return 0;
-        }
+    public void setZOrder(int newZOrder){
+        this.zOrder = newZOrder;
+    }
+
+    public void comparable(Window w){
 
     }
 
-    public int getzOrder(){
+    public int getZOrder(){
         return this.zOrder;
     }
 

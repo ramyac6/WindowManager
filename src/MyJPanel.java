@@ -2,17 +2,22 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MyJPanel extends JPanel {
-    private WindowManager manager;
+    public WindowManager manager;
 
     public MyJPanel() {
         this.manager = new WindowManager();
-        for(int i = 0; i<10;i++){
-            this.manager.addWindow();
+        Window w;
+
+        for(int i = 0; i<10; i++){
+            w = new Window();
+            this.manager.addWindow(w);
         }
+
     }
 
+    @Override
     public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        this.manager.drawWindows(g);
+        //super.paintComponent(g);
+        manager.drawWindows(g);
     }
 }
