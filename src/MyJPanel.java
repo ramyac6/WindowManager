@@ -35,14 +35,17 @@ public class MyJPanel extends JPanel implements MouseListener {
         Window w;
         int x = e.getX();
         int y = e.getY();
-        System.out.println(x + " " + y);
         w = manager.findWindowByPosition(x, y);
         if(w != null){
             Graphics g;
             g = this.getGraphics();
+
             manager.bringToFront(g, w);
+            manager.updateZOrders(w);
+
         }
         manager.updateZOrders(w);
+
     }
 
     @Override

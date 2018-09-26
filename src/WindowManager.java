@@ -1,11 +1,12 @@
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class WindowManager {
     private ArrayList<Window> windowList;
     private int oldZOrderBroughtToTop;
 
-    //Constructer, initializes windowlist
+    //Constructor, initializes windowlist
     public WindowManager (){
         this.windowList = new ArrayList<>();
     }
@@ -17,6 +18,8 @@ public class WindowManager {
 
     //draws all windows in windowlist
     public void drawWindows(Graphics g){
+        Collections.sort(this.windowList);
+
         for (Window w:this.windowList) {
             w.drawWindow(g);
         }
@@ -38,7 +41,7 @@ public class WindowManager {
 
     //redraws window that is brought to front on top
     public void bringToFront(Graphics g, Window w) {
-        //this.drawWindows(g);
+        this.drawWindows(g);
 
         w.drawWindow(g);
     }
@@ -59,7 +62,7 @@ public class WindowManager {
                 numWindowsAtPosition[i] = atPosition.get(i).getZOrder();
             }
             int indexOfWindowAtTop = indexOfTop(numWindowsAtPosition);
-            System.out.println(numWindowsAtPosition[indexOfWindowAtTop]);
+
             return atPosition.get(indexOfWindowAtTop);
         } else {
             return null;
@@ -68,7 +71,7 @@ public class WindowManager {
 
     private int indexOfTop(int[] zOrders) {
         int index = 0;
-        int max = 9;
+        int max = Main.NUMBER_OF_WINDOWS-1;
         for (int i = 0; i < zOrders.length; i++) {
             if (zOrders[i] < max) {
                 max = zOrders[i];
@@ -78,7 +81,7 @@ public class WindowManager {
         return index;
     }
 
-        private boolean inWindow(Window w, int x, int y){
+    private boolean inWindow(Window w, int x, int y){
         if(w.getX() <= x && x <= (w.getX() + w.getW()) && w.getY() <= y && y <= (w.getY() + w.getH())) return true;
         return false;
     }
