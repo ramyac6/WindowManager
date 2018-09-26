@@ -1,11 +1,8 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+
 
 public class Main {
     public static final int NUMBER_OF_WINDOWS = 10;
-
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();

@@ -1,10 +1,10 @@
-import java.awt.*;
+import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class WindowManager {
     private ArrayList<Window> windowList;
-    private int oldZOrderBroughtToTop;
 
     //Constructor, initializes windowlist
     public WindowManager (){
@@ -16,23 +16,20 @@ public class WindowManager {
         this.windowList.add(w);
     }
 
-    //draws all windows in windowlist
+    //draws all windows in windowlist, from lowest zOrder to highest
     public void drawWindows(Graphics g){
         Collections.sort(this.windowList);
-
         for (Window w:this.windowList) {
             w.drawWindow(g);
         }
     }
 
+    //updates zOrders of all windows
     public void updateZOrders(Window w){
         if (w != null){
-            oldZOrderBroughtToTop = w.getZOrder();
-            for (int i = 0; i < windowList.size(); i++) {
-                if (windowList.get(i).getZOrder() < oldZOrderBroughtToTop){
-                    int temp = windowList.get(i).getZOrder();
-                    temp++;
-                    windowList.get(i).setZOrder(temp);
+            for (Window window: windowList){
+                if (window.getZOrder() < w.getZOrder()){
+                    window.setZOrder(window.getZOrder() + 1);
                 }
             }
             w.setZOrder(0);
@@ -42,7 +39,6 @@ public class WindowManager {
     //redraws window that is brought to front on top
     public void bringToFront(Graphics g, Window w) {
         this.drawWindows(g);
-
         w.drawWindow(g);
     }
 
@@ -57,35 +53,17 @@ public class WindowManager {
         }
 
         if (atPosition.size() > 0) {
-            int[] numWindowsAtPosition = new int[atPosition.size()];
-            for (int i = 0; i < numWindowsAtPosition.length; i++) {
-                numWindowsAtPosition[i] = atPosition.get(i).getZOrder();
-            }
-            int indexOfWindowAtTop = indexOfTop(numWindowsAtPosition);
-
-            return atPosition.get(indexOfWindowAtTop);
+            Collections.sort(atPosition);
+            return atPosition.get(atPosition.size()-1);
         } else {
             return null;
         }
     }
 
-    private int indexOfTop(int[] zOrders) {
-        int index = 0;
-        int max = Main.NUMBER_OF_WINDOWS-1;
-        for (int i = 0; i < zOrders.length; i++) {
-            if (zOrders[i] < max) {
-                max = zOrders[i];
-                index = i;
-            }
-        }
-        return index;
-    }
-
+    //checks if given point is within the window
     private boolean inWindow(Window w, int x, int y){
-        if(w.getX() <= x && x <= (w.getX() + w.getW()) && w.getY() <= y && y <= (w.getY() + w.getH())) return true;
-        return false;
+        return w.getX() <= x && x <= (w.getX() + w.getW()) && w.getY() <= y && y <= (w.getY() + w.getH());
     }
-
 
     public ArrayList<Window> getWindows(){
         return this.windowList;

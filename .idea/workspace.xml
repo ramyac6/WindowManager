@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab44ce94-e1ed-4dff-ab45-42b3abc35bc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WindowManagement/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WindowManagement/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WindowManagement/MyJPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WindowManagement/MyJPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WindowManagement/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WindowManagement/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WindowManagement/WindowManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WindowManagement/WindowManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyJPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WindowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WindowManager.java" afterDir="false" />
@@ -42,28 +39,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3770" />
-          <entry key="txt" value="89" />
+          <entry key="java" value="4527" />
+          <entry key="txt" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3770" />
-          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="JAVA" value="4527" />
+          <entry key="PLAIN_TEXT" value="157" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -71,28 +65,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyJPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="15" />
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WindowManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+            <state relative-caret-position="117">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#352#353#0" expanded="true" />
                 <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#2553#2554#0" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
+                <element signature="e#2215#2216#0" expanded="true" />
+                <element signature="e#2253#2254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="100">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1088#1089#0" expanded="true" />
@@ -125,6 +121,7 @@
     <findStrings>
       <find>bring</find>
       <find>prin</find>
+      <find>oldzo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,18 +136,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="D:/P4 Qiu Audrey/src/windowsmanager/Window.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/MyJPanel.java" />
-        <option value="$PROJECT_DIR$/src/WindowManager.java" />
         <option value="$PROJECT_DIR$/src/Window.java" />
+        <option value="$PROJECT_DIR$/src/WindowManager.java" />
+        <option value="$PROJECT_DIR$/src/MyJPanel.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1466" />
-    <option name="height" value="2506" />
+    <option name="x" value="1270" />
+    <option name="width" value="1302" />
+    <option name="height" value="1372" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -179,9 +175,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537928122979" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537931795162" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P4 Qiu Audrey" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../audrey" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -242,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537846858915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Order of windows is displayed in top left corner after double click">
+      <created>1537928166950</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537928166950</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -284,7 +287,8 @@
     <MESSAGE value="Windows now print" />
     <MESSAGE value="Numbers on each fake window" />
     <MESSAGE value="Works, but needs simplification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Works, but needs simplification" />
+    <MESSAGE value="Order of windows is displayed in top left corner after double click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order of windows is displayed in top left corner after double click" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/P4 Qiu Audrey/src/windowsmanager/Window.java">
@@ -325,30 +329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyJPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1088#1089#0" expanded="true" />
@@ -359,17 +343,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WindowManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+        <state relative-caret-position="117">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#228#229#0" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
             <element signature="e#352#353#0" expanded="true" />
             <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#2553#2554#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#2253#2254#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyJPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

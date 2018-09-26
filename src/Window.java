@@ -1,4 +1,6 @@
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Font;
 import java.util.Random;
 
 
@@ -21,18 +23,8 @@ public class Window implements Comparable<Window>{
         this.myColor = new Color(rand.nextInt(255)+1, rand.nextInt(255)+1, rand.nextInt(255)+1); // Color white
     }
 
-    public Window(int x, int y, int w,int h){
-        Random rand = new Random();
-        this.x = x;
-        //801+100 is max, 100 is min
-        this.y = y;
-        this.w = w;
-        this.h = h;
-        this.myColor = new Color(rand.nextInt(255)+1, rand.nextInt(255)+1, rand.nextInt(255)+1); // Color white
-    }
-
-
     @Override
+    //returns higher zOrder
     public int compareTo(Window w){
         return Integer.compare(w.zOrder,this.zOrder);
     }

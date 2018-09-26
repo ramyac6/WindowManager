@@ -1,7 +1,8 @@
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
 
 public class MyJPanel extends JPanel implements MouseListener {
     private WindowManager manager;
@@ -31,21 +32,14 @@ public class MyJPanel extends JPanel implements MouseListener {
     }
 
     @Override
+    //on mouse click, brings window to front
     public void mouseClicked(MouseEvent e) {
-        Window w;
-        int x = e.getX();
-        int y = e.getY();
-        w = manager.findWindowByPosition(x, y);
+        Window w = manager.findWindowByPosition(e.getX(), e.getY());
         if(w != null){
-            Graphics g;
-            g = this.getGraphics();
-
+            Graphics g = this.getGraphics();
             manager.bringToFront(g, w);
-            manager.updateZOrders(w);
-
         }
         manager.updateZOrders(w);
-
     }
 
     @Override
